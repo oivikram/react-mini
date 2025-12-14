@@ -1,34 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import {Bookmark} from "lucide-react";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+    <div className="main">
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        <div className="top">
+          <img src="https://imgs.search.brave.com/Yq1s_vzLmldjmFJsyCb4kZoNLvIkoDpt1khXCmX3W-c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2l0eXBuZy5jb20v/cHVibGljL3VwbG9h/ZHMvcHJldmlldy9h/bWF6b24tb2ZmaWNp/YWwtbG9nby03MDE3/NTE2OTQ3OTE5NjUx/ZXBveWhrcW9yLnBu/Zw" alt="" />
+          <button>SAVE <Bookmark /></button>
+        </div>
+        <div className="center">
+          <h3>amazon <span>5 days ago</span></h3>
+          <h2>Senior ui/Ux designer</h2>
+        </div>
+        <div className="bottom">
+          <div>
+            <div>
+              <h3>$120/hr</h3>
+              <p>Mumbai,India</p>
+            </div>
+            <button>Apply now</button>
+          </div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
