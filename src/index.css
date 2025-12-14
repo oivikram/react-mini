@@ -17,9 +17,98 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  height: 100vh;
+.main{
+  min-height: 124vh;
   width: 100vw;
-  background-color:var(#242424);
-
+  background-color: rgb(38, 38, 38);
+  display: flex;
+  /* justify-content: start; */
+  align-items: center;
+  padding: 20px;
+  margin-top: -40vh;
+  gap: 10px;
+}
+.card{
+  width: 240px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.top img{
+  height: 48px;
+  width: 48px;
+  padding: 8px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  object-fit: contain;
+}
+.top button{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.top button svg{
+  width: 16px;
+  height: 16px;
+}
+.center{
+  margin-bottom: 20px;
+}
+.center h3{
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 8px;
+}
+.center h3 span{
+  color: #999;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.center h2{
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.bottom h3{
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+}
+.bottom p{
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 12px;
+}
+.bottom button{
+  padding: 10px 24px;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
