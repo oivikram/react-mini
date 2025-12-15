@@ -1,27 +1,23 @@
-import React from 'react'
-import {Bookmark} from "lucide-react";
+import { Bookmark } from "lucide-react";
 
-
-const Card = () => {
+const Card = (props) => {
   return (
-    <div>
-        <div className="card">
-                <div className="top">
-                  <img src="https://imgs.search.brave.com/Yq1s_vzLmldjmFJsyCb4kZoNLvIkoDpt1khXCmX3W-c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2l0eXBuZy5jb20v/cHVibGljL3VwbG9h/ZHMvcHJldmlldy9h/bWF6b24tb2ZmaWNp/YWwtbG9nby03MDE3/NTE2OTQ3OTE5NjUx/ZXBveWhrcW9yLnBu/Zw" alt="" />
-                  <button>SAVE <Bookmark /></button>
-                </div>
-                <div className="center">
-                  <h3>amazon <span>5 days ago</span></h3>
-                  <h2>Senior ui/Ux designer</h2>
-                </div>
-                <div className="bottom">
-                  <div>
-                      <h3>$120/hr</h3>
-                      <p>Mumbai,India</p>
-                    <button>Apply now</button>
-                  </div>
-                </div>
-              </div>
+    <div className="card">
+      <div className="top">
+        <img src={props.img} alt="" />
+        <button>SAVE <Bookmark /></button>
+      </div>
+      <div className="center">
+        <h3>{props.company} <span>{props.post}</span></h3>
+        <h2>{props.title}</h2>
+      </div>
+      <div className="bottom">
+        <div>
+          <h3>{props.salary}</h3>
+          <p>{props.location}</p>
+          <button>Apply now</button>
+        </div>
+      </div>
     </div>
   )
 }
